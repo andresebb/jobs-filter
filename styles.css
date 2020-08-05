@@ -99,7 +99,7 @@ body {
   list-style: none;
   display: flex;
 }
-.jobs__right li button {
+.jobs__right li p {
   margin: 0;
   color: #5ba4a4;
   background-color: #effafa;
@@ -112,7 +112,7 @@ body {
   outline: none;
   border: none;
 }
-.jobs__right li button:hover {
+.jobs__right li p:hover {
   background-color: #ccd7d7;
 }
 .jobs .rojo {
@@ -156,5 +156,5 @@ input {
 }
 
 .rojo {
-  background-color: red !important;
+  background-color: rgb(20, 48, 90) !important;
 }

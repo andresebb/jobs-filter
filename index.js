@@ -1,8 +1,6 @@
 const categories = document.querySelectorAll(".category");
 const jobsContainer = document.querySelectorAll(".jobs__container");
-const botonsito = document.querySelector(".botonsito");
-console.log(categories);
-console.log(botonsito);
+const text = document.getElementById("caja");
 
 categories.forEach((categoria) => {
   categoria.addEventListener("click", () => {
@@ -16,6 +14,7 @@ categories.forEach((categoria) => {
 
 categories.forEach((category) => {
   category.addEventListener("click", (e) => {
+    //Aca se obtiene el valor del data-filter
     const filter = e.target.dataset.filter;
     console.log(filter);
 
@@ -30,5 +29,19 @@ categories.forEach((category) => {
         }
       }
     });
+  });
+});
+
+text.addEventListener("keyup", () => {
+  const valor = text.value.toLowerCase().trim();
+  console.log(valor);
+
+  jobsContainer.forEach((item) => {
+    console.log(item.textContent);
+    if (item.textContent.includes(valor)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
   });
 });
