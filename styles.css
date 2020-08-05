@@ -138,6 +138,10 @@ body {
   background-color: #5ba4a4;
 }
 
+.jobs__filter a:checked {
+  background: red;
+}
+
 .jobs__filter div div {
   height: 68px;
   line-height: 62px;
@@ -149,4 +153,8 @@ input {
   border: none;
   border-radius: 14px;
   outline: none;
+}
+
+.rojo {
+  background-color: red !important;
 }

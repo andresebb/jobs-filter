@@ -16,12 +16,23 @@
     <div class="jobs__filter">
       <div>
         <div>
-          <a href="#" class="category btn all">All</a>
-          <a href="#" class="category btn html">Html</a>
-          <a href="#" class="category btn css">Css</a>
-          <a href="#" class="category btn javaScript">JavaScript</a>
-          <a href="#" class="category btn senior">Senior</a>
-          <a href="#" class="category btn frontend">Frontend</a>
+          <a href="#" class="category btn all" data-filter="all">All</a>
+          <a
+            href="#"
+            class="category btn html botonsito rojo"
+            data-filter="html"
+            >Html</a
+          >
+          <a href="#" class="category btn css" data-filter="css">Css</a>
+          <a href="#" class="category btn javaScript" data-filter="javascript"
+            >JavaScript</a
+          >
+          <a href="#" class="category btn senior" data-filter="senior"
+            >Senior</a
+          >
+          <a href="#" class="category btn frontend" data-filter="frontend"
+            >Frontend</a
+          >
         </div>
       </div>
       <form action="">
@@ -34,7 +45,10 @@
     <!-- Start jobs Box -->
     <section class="jobs">
       <!-- Start jobs Container 1 -->
-      <div class="jobs__container" id="jobs__container">
+      <div
+        class="jobs__container frontend senior html css javascript"
+        id="jobs__container"
+      >
         <div class="jobs__left">
           <div class="jobs__image">
             <img src="../assets/images/photosnap.svg" alt="" />
@@ -58,17 +72,17 @@
           </div>
         </div>
         <div class="jobs__right">
-          <li><button class="fron Frontend">Frontend</button></li>
-          <li><button class="fron Senior">Senior</button></li>
-          <li><button class="fron HTML">HTML</button></li>
-          <li><button class="fron CSS">CSS</button></li>
-          <li><button class="fron JavaScript">JavaScript</button></li>
+          <li><button class="fron frontend">Frontend</button></li>
+          <li><button class="fron senior">Senior</button></li>
+          <li><button class="fron html">HTML</button></li>
+          <li><button class="fron css">CSS</button></li>
+          <li><button class="fron javaScript">JavaScript</button></li>
         </div>
       </div>
       <!-- End jobs Container 1 -->
 
       <!-- Start jobs Container 2 -->
-      <div class="jobs__container" id="jobs__container">
+      <div class="jobs__container frontend senior html" id="jobs__container">
         <div class="jobs__left">
           <div class="jobs__image">
             <img src="../assets/images/myhome.svg" alt="" />
@@ -99,7 +113,7 @@
       </div>
       <!-- End jobs Container 2 -->
       <!-- Start jobs Container 3 -->
-      <div class="jobs__container" id="jobs__container">
+      <div class="jobs__container html css javascript" id="jobs__container">
         <div class="jobs__left">
           <div class="jobs__image">
             <img src="../assets/images/manage.svg" alt="" />
@@ -130,7 +144,7 @@
       </div>
       <!-- End jobs Container 3 -->
       <!-- Start jobs Container 4 -->
-      <div class="jobs__container" id="jobs__container">
+      <div class="jobs__container frontend senior" id="jobs__container">
         <div class="jobs__left">
           <div class="jobs__image">
             <img src="../assets/images/insure.svg" alt="" />
